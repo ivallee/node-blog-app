@@ -30,3 +30,32 @@ var posts = [
     body: 'Blog post number 4'
   }
 ]
+
+// set the view engine to ejs
+app.set('view engine', 'ejs')
+
+//blog home page
+app.get('/', function(req, res) {
+  // render `home.ejs` with the list of posts
+  res.render('home', {posts: posts
+  });
+})
+
+// blog post
+app.get('/post/:id', function(req, res) {
+  // find the post in the `posts` array
+  var post = posts.filter(function(post) {
+    return post.id == req.params.id
+  });
+
+  //render the `post-ejs` template with the post content
+  res.render('post', {
+    author: post.author,
+    title: post.title,
+    body: post.body
+  })
+})
+
+app.listen(8080)
+
+console.log('listening on port 8080');
