@@ -46,7 +46,7 @@ app.get('/post/:id', function(req, res) {
   // find the post in the `posts` array
   var post = posts.filter(function(post) {
     return post.id == req.params.id
-  });
+  })[0];
 
   //render the `post-ejs` template with the post content
   res.render('post', {
