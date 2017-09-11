@@ -7,27 +7,27 @@ var app = require('express')()
 var posts = [
   {
     id: 1,
-    author: 'John',
-    title: 'Templating with EJS',
-    body: 'Blog post number 1'
+    author: 'Isaac',
+    title: 'How to pretend to know EJS',
+    body: 'Lorem ipsum dolor sit amet, docendi tractatos at ius. Ex conceptam vituperatoribus pri, ei quo elit mnesarchum. Tempor lucilius maiestatis usu ei, nec sumo necessitatibus in. Qui in congue graece.'
   },
   {
     id: 2,
-    author: 'Drake',
-    title: 'Express: Starting from the Bottom',
-    body: 'Blog post number 2'
+    author: 'Phil \"Doggy-Dog\" Filson',
+    title: 'How to deal with having a weird nickname',
+    body: 'Lorem ipsum dolor sit amet, docendi tractatos at ius. Ex conceptam vituperatoribus pri, ei quo elit mnesarchum. Tempor lucilius maiestatis usu ei, nec sumo necessitatibus in. Qui in congue graece.'
   },
   {
     id: 3,
-    author: 'Emma',
-    title: 'Streams',
-    body: 'Blog post number 3'
+    author: 'Isaac',
+    title: 'I swear I know what I\'m doing',
+    body: 'Lorem ipsum dolor sit amet, docendi tractatos at ius. Ex conceptam vituperatoribus pri, ei quo elit mnesarchum. Tempor lucilius maiestatis usu ei, nec sumo necessitatibus in. Qui in congue graece.'
   },
   {
     id: 4,
     author: 'Cody',
     title: 'Events',
-    body: 'Blog post number 4'
+    body: 'Lorem ipsum dolor sit amet, docendi tractatos at ius. Ex conceptam vituperatoribus pri, ei quo elit mnesarchum. Tempor lucilius maiestatis usu ei, nec sumo necessitatibus in. Qui in congue graece.'
   }
 ]
 
